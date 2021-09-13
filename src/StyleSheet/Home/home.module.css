@@ -1,0 +1,159 @@
+.home-div{
+    padding: 0;
+    margin-top: 11vh;
+    box-sizing: border-box;
+     height: 110vh;
+    width: 100%;
+  
+}
+
+.body_div{
+    height: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 100%;
+     background-image:
+      linear-gradient(rgb(240, 230, 230 , 0.3),rgb(15, 15, 253,0.3),  rgba(0, 255, 21, 0.3)),
+                  url(../../Component//image/bg-3.jpg);
+ z-index: 1;
+                }
+
+
+.headering{
+    /* position: absolute; */
+      position: inherit;
+   
+    padding-top: 150px;
+    padding-left: 120px;
+   
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.headering p{
+    font-size: 15px;
+     font-weight: 750;
+animation:right 2s linear 1;
+ animation-delay: 1s;
+ visibility: hidden;
+ animation-fill-mode: forwards;
+}
+@keyframes right {
+  0%{
+      transform: translateY(-110px);
+       visibility: visible;     
+    }
+     100%{
+      transform: translateY(0px);
+       visibility: visible;     
+    }
+    
+}
+.headering h2{
+    font-size: 45px;
+    font-weight: 600;
+  
+animation:left 2s linear 1;
+ animation-delay: 2s;
+ visibility: hidden;
+ animation-fill-mode: forwards;
+  /* font-family:  cursive; */
+ 
+}
+@keyframes left {
+  0%{
+      transform: translateX(-110px);
+       visibility: visible;     
+    }
+     100%{
+      transform: translateX(0px);
+       visibility: visible;     
+    }
+    
+}
+.headering span{
+    font-weight: 500;
+    font-size: 15px;
+animation:left 2s linear 1;
+ animation-delay: 3s;
+ visibility: hidden;
+ animation-fill-mode: forwards;
+}
+@keyframes left {
+  0%{
+      transform: translateX(-110px);
+       visibility: visible;     
+    }
+     100%{
+      transform: translateX(0px);
+       visibility: visible;     
+    }
+    
+}
+.headering button{
+    
+    margin: 2rem;
+    font-size: 12px;
+    padding: 12px 25px;
+    border-radius: 13px;
+    border: none;
+    background-color: rgba(0, 0, 255, 0.7);
+   
+animation:button 2s linear 1;
+ animation-delay: 4s;
+ visibility: hidden;
+ animation-fill-mode: forwards;
+}
+@keyframes button {
+  0%{
+      transform: scale(0.5);
+       visibility: visible;     
+    }
+     100%{
+      transform: scale(1);
+       visibility: visible;     
+    }
+    
+} 
+        
+
+.headering button a{
+    text-decoration: none;
+    color:#fff;}
+.image-div{
+    margin-left: 3rem;
+    padding-top: 5px;
+    height: 80px;
+    width: 250px;
+animation:back 2s linear 1;
+ animation-delay: 1s;
+ visibility: hidden;
+ animation-fill-mode: forwards;
+}
+@keyframes back {
+  0%{
+      transform: scale(0.5);
+       visibility: visible;     
+    }
+     100%{
+      transform: scale(1);
+       visibility: visible;     
+    }
+    
+}
+.image-div h2{
+     background:  linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 255, 21, 0.5));
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    border-bottom-right-radius: 60%;
+    border-top-left-radius: 60%;
+    padding-top: 15px;
+    color:  rgba(0, 255, 21, 0.5);
+    font-family: 'Pacifico', cursive;
+}
+/* .headering h2,p,span{
+     background: -webkit-linear-gradient(#9a9e9d,  rgba(0, 255, 21, 0.5));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+/* } */
+

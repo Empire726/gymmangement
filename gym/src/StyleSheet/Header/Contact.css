@@ -1,0 +1,236 @@
+ .contact{
+     
+     padding: 0;
+  height: auto;
+  background-repeat: no-repeat;
+  /* border-top: 10px solid blue; */
+  margin-top: 120px;
+    margin-bottom: 80px;
+ }
+
+ .body-div {
+     width: 75%;
+     background:  #acaaaa ;
+     margin:0.5rem 10rem;
+     box-shadow: 15px -10px 2px #395e8f;
+    
+ }
+ .grid-container {
+  width: 100%;
+  padding: 4rem 5rem;
+
+}
+
+.input{
+    margin-top: 10px ;
+    padding: 5px 0px;
+    width: 50%;
+}
+
+
+
+.input-1{
+    padding: 5px;
+    margin-top: 15px;
+    width: 50%;
+    text-align: center;
+}
+.input-last{
+    margin-left: 10px;
+     margin-top: 10px ;
+    padding: 5px 10px 10px 10px;
+}
+
+
+ .form-del {
+    background:rgb(41, 115, 172);
+    border: dotted ;
+    /* margin: 20px  100px 20px 100px;
+    padding:10px 500px 10px 500px; */
+    /* background:rgb(175, 162, 162); */
+    text-align: center;
+}
+    
+
+
+ .last-name{
+   
+    text-align: center;
+   
+ }
+.from-dropdown{
+    
+    /* background: aqua; */
+   
+   
+    display:flex;
+    justify-content:center;
+}
+
+.blood-gp{
+   
+    text-align: center;
+  
+  
+}
+
+.form-input {
+    margin-top: 20px;
+ 
+}
+
+  
+.first-name{
+ justify-content: center;
+ align-items: center;
+ margin: 1rem 3rem 1rem 1rem ;
+ 
+ 
+  }
+ .name-init{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.blood-gp {
+    margin-right: 12px;
+ } 
+ .phone-no ,.login-id2{
+     margin: 1rem 2.5rem 1rem 1rem;
+ }
+.login-id1{
+     margin: 1rem 5rem 1rem 1rem;
+ }
+ .login-id2 {
+     margin: 1rem 3.5rem 1rem 1rem;
+ }
+.add-1{
+      margin: 1rem 4rem 1rem 1rem;
+ }
+
+ .add-2{
+     margin-right: 63px;
+ }
+ .cit-1{
+       margin: 1rem 5rem 1rem 2rem;
+ }
+ .pin-1{
+       margin: 1rem 3rem 1rem 1rem;
+ }
+ .count-1{
+      margin: 1rem 2.8rem 1rem 1rem;
+    
+    
+ }
+ .address-text{
+     margin-top: 0;
+ }
+ /* ------------------------------------------------------------------------------- */
+ .submit-1 {
+  border-radius: 4px;
+  background-color: #11435a;
+  border: none;
+  color: #FFFFFF;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2rem 0px 1rem 20rem;
+}
+
+.submit-1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.submit-1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  color: aqua;
+}
+
+.submit-1:hover span {
+  padding-right: 25px;
+}
+
+.submit-1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* ----------------------------------------------------------------------- */
+
+
+
+.name-init ,.blood-gp ,.phone-no ,.count-1,.login-id1, .login-id2,.add-1,.add-2,.add-3,.cit-1 ,.pin-1{ 
+  
+    color:rgb(55, 55, 156);
+
+    font-weight:600;
+} 
+.first-input{
+
+    margin-top: 20px;
+}
+
+.form-6 ,.form-input{
+    margin: 15px ;
+     width: 50%;
+}
+
+/* ---------------------------------------@media Quire-------------------------------------------- */
+@media screen and (max-width:768px){
+    .body{
+        /* width:80px; */
+        /* font-size: 15px; */
+        text-align: center;
+    }
+.body-div{
+    margin-top:10px;
+    margin-left: 250px;
+    margin-bottom:20px; 
+    padding-top:30px;
+    display:flex;
+    justify-content:center;
+ } 
+ .input-last{
+    margin-left: 130px;
+     margin-top: 10px ;
+    padding: 5px 10px 10px 10px;
+}
+ /* .form-6{
+     margin-left: 15px;
+     
+    
+ } */
+} 
+/* -----------------------------@media 1271----------------------------------------- */
+/* @media screen and (max-width:1271px){
+    .body{
+        width:80px;
+        font-size: 15px;
+        text-align: center;
+    }
+.body-div{
+    margin-top:10px;
+    margin-left: 250px;
+    margin-bottom:20px; 
+    padding-top:30px;
+    display:flex;
+    justify-content:center;
+ } 
+ .input-last{
+    margin-left: 10px;
+     margin-top: 10px ;
+    padding: 5px 10px 10px 10px;
+}
+} */

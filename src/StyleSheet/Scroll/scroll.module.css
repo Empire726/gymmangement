@@ -1,0 +1,95 @@
+    body {
+        padding: 0;
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #fff;
+    }
+    .card-container {
+        width: 100%;
+        overflow-x: scroll;
+        display: flex;
+        background-color: #100e17;
+        padding: 3rem;
+        background-image: url(../../Component/image/bg-2.jpg);
+       
+        
+    }
+    .card {
+      motion-rotation: 80deg;
+       min-width:  300px;
+        height: 350px;
+        border-radius: 1rem;
+        background-color: #000;
+        box-shadow: -1rem 0 3rem #000;
+        display: flex;
+        flex-direction: column;
+        /* padding: 1.5rem; */
+        transition: 0.2s;
+        margin:3rem;
+    }
+    .tags :link{
+        text-decoration: none;
+        justify-content: center;
+        
+
+    }
+    
+    .img_section{
+        height:85%;
+        width: 100%;
+          
+    }
+    .img_section img{
+        height: 100%;
+        width: 100%;
+        border-top-left-radius: 1rem;
+         border-top-right-radius: 1rem;
+          -webkit-transition: all 2s ease;
+      -moz-transition: all 2s ease;
+      -ms-transition: all 2s ease;
+      transition: all 2s ease;
+    }
+    .img_section img:hover{
+         height: 90%;
+        width: 90%;
+         border-radius: 1rem;
+         margin: 15px;
+        
+
+    }
+
+    .tags {
+        background: #00adea;
+        display: flex;
+        /* width: fit-content; */
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 1rem 0 1rem;
+        border-bottom-left-radius: 1rem;
+         border-bottom-right-radius: 1rem;
+    }
+
+    .tags div {
+        font-size: 9px;
+        font-weight: 700;
+        padding: 4px 10px;
+        border: 3px solid #2a09bb;
+        border-radius: 2rem;
+        background:blue ;
+        color: #fff;
+    }
+    .tags a{
+        color: #fff;
+    }
+
+    
+    .card:not(:first-child) {
+        margin-left: -10px;
+}
+.card:hover {
+        transform: translateY(-0.5rem);
+    }
+    .card:hover~.card{
+    transform: translateX(5px);
+}

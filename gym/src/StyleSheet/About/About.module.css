@@ -1,0 +1,15 @@
+.exercise{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.image_di{
+    height: 500px;
+    width: 500px;
+    background: cyan;
+
+}
+.image_di img{
+    height: 100%;
+    width: 100%;
+}

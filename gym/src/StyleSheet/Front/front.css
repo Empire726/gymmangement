@@ -1,0 +1,18 @@
+.animated{
+    box-sizing: border-box;
+    padding: 0;
+    /* margin: 2rem; */
+    height: 110vh;
+    background-color: cornflowerblue;
+    width: 100%; 
+  
+}
+.animats{
+    height: 100%;
+    width: 100%;
+      background-image: url(../../Component/image//bg\ image-2.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+
+}

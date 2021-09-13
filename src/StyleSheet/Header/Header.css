@@ -1,0 +1,236 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 11vh;
+   /* background:rgba(0, 0, 255, 0.5); */
+  color: #333;
+  transform: translateY(0);
+  transition: transform 0.2s ease;
+  z-index: 20;
+}
+.header2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 11vh;
+  background-color:#00adea;
+  color: rosybrown;
+  transform: translateY(10);
+  transition: transform 2s ease;
+  animation: myanimation 2s;
+  z-index: 1000000000;
+}
+@keyframes myanimation {
+  0% {
+    background-color: transparent;
+    color: transparent;
+  }
+  35% {
+    background-color: rgba(73, 63, 252, 1);;
+    color: rosybrown;
+    
+  }
+  100% {
+    background-color:#00adea;
+     /* rgba(73, 63, 252, 1); */
+    color: rosybrown;
+  }
+}
+/* ------------------------------------------------- */
+.Navbar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: rgb(15, 15, 253,0.5);
+    /* position: absolute; */
+    
+}
+
+.navbar-logo{
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.imager{
+    width: 60%;
+
+}
+
+.navbar-logo{
+   height: 80px;
+    margin-left: 2rem; 
+
+}
+
+
+.fa-react{
+    margin-left: .5rem;
+    font-size: 1.6rem;   
+}
+
+.nav-menu{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: flex-end;
+    margin-right: 2rem;
+}
+.dropdown-content {
+  display: none;
+  margin-top: 16px;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  position: absolute;
+  background-color: rgb(15, 15, 253,0.5);
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: white;
+  padding: 7px 10px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.nav-links:hover .dropdown-content {display: block;}
+
+
+
+.nav-links{
+    color: white;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+    position: relative;
+}
+.nav-item{
+    line-height: 30px;
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+
+.nav-links:hover{
+    border-radius: 4px;
+    transition: all .2s ease;
+}
+
+.fa-bars{
+    color: #fff;
+}
+
+.nav-links-mobile{
+    display: none;
+}
+
+.menu-icon{
+    display: none;
+}
+
+@media screen and (max-width: 960px) {
+    .Navbar{
+        /* position: relative; */
+        background-color: rgba(0, 0, 0, 0.911);
+    }
+
+    .nav-menu{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 80px;
+        left:-100%;
+        transition: all .5s ease;
+        border-top: 1px solid #fff;
+        margin-left: 0px;
+    
+        
+    }
+    .nav-menu li{
+       border-bottom: 0.1px solid rgb(151, 143, 143); 
+    }
+    
+    .nav-menu li:hover{
+        background-color: black;
+        border-bottom: 2px solid chartreuse;
+        transition: width 5s;
+        transition-timing-function: ease;
+    }
+
+    .nav-menu.active{
+        background:black;
+        left: 0;
+        transition: all .5s ease;
+        z-index: 1;
+    }
+
+    .nav-links{
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .nav-links:hover{
+        border-radius: 0;
+    }
+
+    .navbar-logo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* transform: translate(25%, 50%); */
+    }
+
+    .menu-icon{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+    
+    .fa-times{
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    .nav-links-mobile{
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+        margin: 2rem auto;
+        border-radius: 4px;
+        width: 80%;
+        background: #fad934;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+
+    .nav-links-mobile:hover{
+        background: #fff;
+        color: #6568f4;
+        transition: 250ms;
+    }
+
+    Button {
+        display: none;
+    }
+}
